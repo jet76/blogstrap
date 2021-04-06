@@ -48,6 +48,8 @@ function blogstrap_setup(){
     // Add support for custom units.
     // This was removed in WordPress 5.6 but is still required to properly support WP 5.5.
     add_theme_support('custom-units');
+
+	if (!isset($content_width)) $content_width = 768;
             
 }
 add_action('after_setup_theme', 'blogstrap_setup');
