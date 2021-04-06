@@ -13,6 +13,9 @@ function blogstrap_setup(){
     //require_once get_template_directory().'/inc/class-wp-bootstrap-navwalker.php';
     register_nav_menus(array('primary' => __('Primary menu', 'blogstrap')));
 
+	// Add default posts and comments RSS feed links to head.
+	add_theme_support('automatic-feed-links');
+
     /*
     * Let WordPress manage the document title.
     * This theme does not use a hard-coded <title> tag in the document head,
