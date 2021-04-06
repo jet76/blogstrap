@@ -70,7 +70,7 @@ function blogstrap_widgets_init(){
         array(
             'id' => 'sidebar-content',
             'name' => __('Content Sidebar', 'blogstrap'),
-            'description' => __('Sidebar for content pages'),
+            'description' => __('Sidebar for content pages', 'blogstrap'),
             'class' => 'list-unstyled mb-0',
             'before_widget' => '<div class="p-4">',
             'after_widget' => '</div><!-- /.p-4 -->',
@@ -82,7 +82,7 @@ function blogstrap_widgets_init(){
         array(
             'id' => 'sidebar-footer',
             'name' => __('Footer Sidebar', 'blogstrap'),
-            'description' => __('Sidebar for site footer'),
+            'description' => __('Sidebar for site footer', 'blogstrap'),
             'before_widget' => '<div class="col-sm mb-4 pb-4">',
             'after_widget' => '</div><!-- /.col -->',
             'before_title' => '<h4 class="fst-italic">',
