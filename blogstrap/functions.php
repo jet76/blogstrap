@@ -13,6 +13,14 @@ function blogstrap_setup(){
     //require_once get_template_directory().'/inc/class-wp-bootstrap-navwalker.php';
     register_nav_menus(array('primary' => __('Primary menu', 'blogstrap')));
 
+	/*
+	 * Make theme available for translation.
+	 * Translations can be filed in the /languages/ directory.
+	 * If you're building a theme based on Twenty Twenty-One, use a find and replace
+	 * to change 'twentytwentyone' to the name of your theme in all the template files.
+	 */
+	load_theme_textdomain( 'blogstrap', get_template_directory() . '/languages' );
+
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support('automatic-feed-links');
 
