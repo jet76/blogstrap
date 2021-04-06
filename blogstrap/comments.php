@@ -66,7 +66,7 @@ if (post_password_required()){
 	?>
 <!-- End Comments Pagination -->
     <?php if (!comments_open()): ?>
-        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'twentytwentyone' ); ?></p>
+        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'blogstrap' ); ?></p>
     <?php endif; !comments_open() ?>
 <?php endif; // have_comments() ?>
 <!-- Begin Comment Form -->
